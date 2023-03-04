@@ -1,26 +1,35 @@
 <template>
   <q-item clickable v-ripple>
-    <q-avatar rounded>
-      <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-    </q-avatar>
-    <q-item-section> {{ music.title }}</q-item-section>
-    <q-item-section avatar> </q-item-section>
-    <q-item-section side
-      ><q-btn
-        v-if="canStartPlay"
-        @click.stop="canStartPlay = true"
-        icon="pause_outlined"
-        round
-        flat
-      />
-      <q-btn
-        v-else
-        @click.stop="canStartPlay = true"
-        icon="play_arrow_outlined"
-        round
-        flat
-      />
-      <q-btn @click.stop icon="file_download_outlined" round flat />
+    <q-item-section avatar>
+      <q-avatar rounded>
+        <img src="https://cdn.quasar.dev/img/mountains.jpg" />
+      </q-avatar>
+    </q-item-section>
+
+    <q-item-section>
+      {{ music.title }}
+    </q-item-section>
+
+    <q-item-section side>
+      <div class="">
+        <q-btn
+          v-if="canStartPlay"
+          @click.stop="canStartPlay = false"
+          icon="pause_outlined"
+          round
+          flat
+        />
+        <q-btn
+          v-else
+          @click.stop="canStartPlay = true"
+          icon="play_arrow_outlined"
+          round
+          flat
+        />
+        <q-btn @click.stop icon="file_download_outlined" round flat />
+      </div>
+
+
     </q-item-section>
   </q-item>
 
@@ -31,7 +40,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from "vue"
 export default {
   name: "MusicComponent",
   props: ["music"],

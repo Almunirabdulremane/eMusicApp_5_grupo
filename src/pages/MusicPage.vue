@@ -1,8 +1,14 @@
 <template>
-  <q-page class="q-pa-md bg-dark text-white">
-    <div class="text-h6">Lista das Músicas</div>
+  <q-page class="q-pa-md bg-grey-3 text-bold">
+
+    <div class="text-h6">
+      Lista das Músicas
+    </div>
+
     <q-list bordered class="q-mt-lg">
-      <music-component v-for="music in musicsList" :music="music" />
+      <music-component
+        v-for="music in musicsList" :music="music"
+      />
     </q-list>
   </q-page>
 </template>
@@ -33,7 +39,7 @@ export default defineComponent({
       },
     ]);
     return {
-      musicsList,
+      musicsList
     };
   },
 });
