@@ -2,9 +2,14 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
+
         <q-toolbar-title>eMusic App</q-toolbar-title>
 
+
+        <q-toolbar-title class="text-green-10">eMusic App</q-toolbar-title>
+
         <q-btn round>
+
           <q-avatar size="42px">
             <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
           </q-avatar>
