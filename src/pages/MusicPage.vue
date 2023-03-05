@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import MusicComponent from "src/components/base/MusicComponent.vue";
 import { defineComponent, ref } from "vue";
+import MusicComponent from "src/components/base/MusicComponent.vue";
 
 export default defineComponent({
-  components: { MusicComponent },
   name: "MusicPage",
+  components: { MusicComponent },
   setup() {
     const musicsList = ref([
       {

@@ -14,14 +14,14 @@
       <div class="">
         <q-btn
           v-if="canStartPlay"
-          @click.stop="canStartPlay = false"
+          @click.stop="$event => canStartPlay = false"
           icon="pause_outlined"
           round
           flat
         />
         <q-btn
           v-else
-          @click.stop="canStartPlay = true"
+          @click.stop="$event => canStartPlay = true"
           icon="play_arrow_outlined"
           round
           flat
