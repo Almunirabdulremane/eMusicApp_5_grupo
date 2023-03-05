@@ -2,14 +2,14 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-toolbar-title> eMusic App </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
     <q-page-container>
       <q-item to="/videos/my-video-id">
         <q-item-section>
-          <q-item-label> My Video </q-item-label>
+          <q-btn> Meus vídeos </q-btn>
         </q-item-section>
       </q-item>
     </q-page-container>

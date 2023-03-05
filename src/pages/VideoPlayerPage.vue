@@ -1,6 +1,6 @@
 <template>
   <div>
-    <video ref="videoPlayer" controls autoplay>
+    <video class="my-video" ref="videoPlayer" controls autoplay>
       <source :src="videoUrl" type="video/mp4" />
     </video>
   </div>
@@ -20,3 +20,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.my-video {
+  width: 340px;
+  height: 200px;
+}
+</style>
