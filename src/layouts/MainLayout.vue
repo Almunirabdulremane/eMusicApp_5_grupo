@@ -2,36 +2,16 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title>eMusic App</q-toolbar-title>
-
-        <q-btn round>
-          <q-avatar size="42px">
-            <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-          </q-avatar>
-
-          <q-menu>
-            <q-list style="min-width: 100px">
-              <q-item to="/" clickable v-close-popup exact>
-                <q-item-section>Início</q-item-section>
-              </q-item>
-              <q-item to="/musics" clickable v-close-popup exact>
-                <q-item-section>Músicas</q-item-section>
-              </q-item>
-              <q-item clickable v-close-popup exact>
-                <q-item-section>Músicas Baixadas</q-item-section>
-              </q-item>
-              <q-separator />
-              <q-item clickable v-close-popup exact>
-                <q-item-section>Login</q-item-section>
-              </q-item>
-            </q-list>
-          </q-menu>
-        </q-btn>
+        <q-toolbar-title> Quasar App </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <q-item to="/videos/my-video-id">
+        <q-item-section>
+          <q-item-label> My Video </q-item-label>
+        </q-item-section>
+      </q-item>
     </q-page-container>
   </q-layout>
 </template>

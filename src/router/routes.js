@@ -2,10 +2,12 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
-    children: [
-      { path: "", component: () => import("pages/IndexPage.vue") },
-      { path: "/musics", component: () => import("pages/MusicPage.vue") },
-    ],
+    children: [{ path: "", component: () => import("pages/IndexPage.vue") }],
+  },
+  {
+    path: "/videos/:videoId",
+    name: "video-player",
+    component: () => import("pages/VideoPlayerPage.vue"),
   },
 
   // Always leave this as last one,

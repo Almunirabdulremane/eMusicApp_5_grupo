@@ -1,7 +1,7 @@
 {
-  "name": "emusicapp-grupo-5",
+  "name": "emusicapp-5-grupo",
   "version": "0.0.1",
-  "description": "Aplicativo de reprodução e download de Músicas",
+  "description": "Aplicação para reprodução de videos",
   "productName": "eMusic App",
   "author": "Anderson Armindo João <andersonarmindojoao@outlook.com>",
   "private": true,
