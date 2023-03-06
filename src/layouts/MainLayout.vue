@@ -22,12 +22,15 @@
               <q-item to="/musics" clickable v-close-popup exact>
                 <q-item-section>Músicas</q-item-section>
               </q-item>
-              <q-item clickable v-close-popup exact>
-                <q-item-section>Músicas Baixadas</q-item-section>
+              <q-item to="/videos" clickable v-close-popup exact>
+                <q-item-section>Videos</q-item-section>
+              </q-item>
+              <q-item to="/login" clickable v-close-popup exact>
+                <q-item-section>Login</q-item-section>
               </q-item>
               <q-separator />
-              <q-item clickable v-close-popup exact>
-                <q-item-section>Login</q-item-section>
+              <q-item to="/login" clickable v-close-popup exact>
+                <q-item-section>Registrar</q-item-section>
               </q-item>
             </q-list>
           </q-menu>

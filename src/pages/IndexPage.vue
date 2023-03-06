@@ -12,6 +12,17 @@
       />
     </div>
 
+    <div class="text-h6 text-grey-3">
+      <q-btn
+        to="/videos"
+        label="Ver os Videos"
+        color="blue"
+        rounded
+        unelevated
+        size="lg"
+      />
+    </div>
+
   </q-page>
 </template>
 
