@@ -1,6 +1,7 @@
 import { store } from 'quasar/wrappers'
 import { createPinia } from 'pinia'
 
+import auth from 'src/stores'
 /*
  * If not building with SSR mode, you can
  * directly export the Store instantiation;
@@ -11,7 +12,12 @@ import { createPinia } from 'pinia'
  */
 
 export default store((/* { ssrContext } */) => {
-  const pinia = createPinia()
+  const pinia = createPinia({
+
+    modules:{
+      auth
+    },
+  })
 
   // You can add Pinia plugins here
   // pinia.use(SomePiniaPlugin)
