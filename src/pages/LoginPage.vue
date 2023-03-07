@@ -9,10 +9,10 @@
           <q-btn type="submit" label="Login" color="primary" />
         </q-form>
         <div class="text-center q-mt-sm q-gutter-lg">
-          <router-link class="text-white" to="/login">Esqueceu a senha?</router-link>
-          <router-link class="text-white" to="/login">Criar conta</router-link>
+<!--          <p><router-link class="text-black" to="/reg">Criar conta</router-link></p>-->
+          <p><router-link class="text-black" to="/login">Esqueceu a senha?</router-link></p>
+          <p><router-link class="text-black" to="/reg">Don't have an account yet? Register</router-link></p>
         </div>
-        <p>Don't have an account yet? <router-link to="/reg">Register</router-link></p>
       </q-card-section>
     </q-card>
   </q-page>
